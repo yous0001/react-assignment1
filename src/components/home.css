@@ -1,0 +1,85 @@
+.home-content{
+    background-color: #1ABC9C!important;
+    color: white !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home-content .box{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home-content .box img{
+    width: 250px;
+}
+.home-content .box h1,.portfolio-content .container h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-top: 20px;
+}
+.home-content .box .icon,.portfolio-content .container .icon{
+    position: relative;
+}
+.home-content .box .icon::after,.portfolio-content .container .icon::after{
+    content: "";
+    height: 4px;
+    width: 80px;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    background-color: white;
+}
+.home-content .box .icon::before,.portfolio-content .container .icon::before{
+    content: "";
+    height: 4px;
+    width: 80px;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    background-color: white;
+}
+
+.portfolio-content{
+    color: #2c3e50;
+}
+.portfolio-content .container .icon{
+    width: fit-content;
+    margin: auto;
+}
+.portfolio-content .container .icon::before{
+    background-color: #2c3e50;
+}
+.portfolio-content .container .icon::after{
+    background-color: #2c3e50;
+}
+.portfolio-content .item{
+    position: relative;
+    transition: all 1s;
+    
+}
+.portfolio-content .imglayer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #1abc9ce6;
+    align-items: center;
+    justify-content: center;
+    font-size: 96px;
+    color: white;
+    display: flex;
+    transition: all 0.5s;
+    opacity: 0;
+}
+.portfolio-content .item:hover .imglayer{
+    opacity: 1;
+}
+
+#img-showed{
+    background-color: rgba(27, 67, 124, 0.39);
+}

@@ -1,0 +1,30 @@
+.Footer{
+    background-color: #2C3E50;
+    color: white;
+    
+}
+.Footer .item h3{
+    font-weight: 500;
+    line-height: 32px;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+.Footer .icons i{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 12px;
+    transition: 0.5s all;
+}
+.Footer .icons i:hover{
+    background-color: white;
+    color: #2C3E50;
+}
+.copyrights{
+    background-color: #1A252F;
+}
+.start{
+    margin-top:70px;
+}
+.height-100{
+    height: 100vh;
+}
