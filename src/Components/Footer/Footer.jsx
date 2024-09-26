@@ -5,7 +5,7 @@ export default class Footer extends Component {
     return (
       <footer>
         <div className="container">
-            <div className="row text-center">
+            <div className="row text-center g-5">
                 <div className="col-md-4">
                     <h2>LOCATION</h2>
                     <p>2215 John Daniel Drive</p>
