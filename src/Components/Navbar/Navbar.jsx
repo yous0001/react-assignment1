@@ -24,13 +24,13 @@ export default class Navbar extends Component {
             <div className="collapse navbar-collapse" id="collapsibleNavId">
                 <ul className="navbar-nav ms-auto mt-2 mt-lg-0 gap-2 text-uppercase">
                     <li className="nav-item">
-                        <NavLink className="nav-link text-light fs-5 fw-bold" to="">about</NavLink>
+                        <NavLink className="nav-link text-light fs-5 fw-bold" to="/about">about</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link text-light fs-5 fw-bold" to="">Portfolio</NavLink>
+                        <NavLink className="nav-link text-light fs-5 fw-bold" to="/portfolio">Portfolio</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link text-light fs-5 fw-bold" to="">Content</NavLink>
+                        <NavLink className="nav-link text-light fs-5 fw-bold" to="/content">Content</NavLink>
                     </li>
                     
                 </ul>

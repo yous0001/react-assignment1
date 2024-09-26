@@ -9,6 +9,9 @@
 
 .main-bg{
   background-color: var(--main-color);
+  
+}
+.home-container{
   height:90vh;
 }
 .avatar-img{
@@ -42,4 +45,16 @@ footer .icon{
 }
 .copy-rights p{
   margin: 0;
+}
+
+.about-content{
+  font-size: 1.11rem;
+  text-align:left;
+}
+a{
+  transition: all 0.5s;
+}
+a.active{
+  background-color: #1abc9c;
+  border-radius: 10px;
 }
