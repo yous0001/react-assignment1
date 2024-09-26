@@ -12,7 +12,7 @@ export default class Portfolio extends Component {
         this.setState({img})
     }
 
-  componentDidMount() {    
+componentDidMount() {    
     let items=document.querySelectorAll(".item")  
     items=Array.from(items)
     items.forEach(item => {

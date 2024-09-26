@@ -94,3 +94,10 @@ i.text-portfolio{
 .layer img{
   width: 600px;
 }
+.space{
+  height: 19vh;
+}
+.navbar{
+  z-index: 10;
+  transition: all 0.3s;
+}

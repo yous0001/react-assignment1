@@ -2,11 +2,30 @@ import React, { Component } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
 export default class Navbar extends Component {
+    state = {
+        scroller: false 
+    }
+
+    handleScroll = () => {
+        if (window.scrollY > 10) {
+            this.setState({ scroller: true }); 
+        } else {
+            this.setState({ scroller: false });
+        }
+    };
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
   render() {
     return (
       <>
     <nav
-        className="navbar navbar-expand-sm navbar-light navbar-bg"
+        className={`navbar navbar-expand-sm navbar-light navbar-bg position-fixed top-0 start-0 end-0 ${(!this.state.scroller) ? " p-5" :"p-2"}`}
     >
         <div className="container">
             <Link className="navbar-brand text-light fs-2 fw-bold" to="">START FRAMEWORK</Link>

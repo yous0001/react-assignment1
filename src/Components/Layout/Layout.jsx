@@ -8,6 +8,7 @@ export default class Layout extends Component {
     return (
       <>
       <Navbar/>
+      <div className="space"></div>
       <Outlet/>
       <Footer/>
       </>
