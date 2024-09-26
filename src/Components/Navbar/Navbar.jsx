@@ -6,10 +6,10 @@ export default class Navbar extends Component {
     return (
       <>
     <nav
-        className="navbar navbar-expand-sm navbar-light bg-light"
+        className="navbar navbar-expand-sm navbar-light navbar-bg"
     >
         <div className="container">
-            <Link className="navbar-brand" to="">Navbar</Link>
+            <Link className="navbar-brand text-light fs-2 fw-bold" to="">START FRAMEWORK</Link>
             <button
                 className="navbar-toggler d-lg-none"
                 type="button"
@@ -22,15 +22,15 @@ export default class Navbar extends Component {
                 <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="collapsibleNavId">
-                <ul className="navbar-nav me-auto mt-2 mt-lg-0">
+                <ul className="navbar-nav ms-auto mt-2 mt-lg-0 gap-2 text-uppercase">
                     <li className="nav-item">
-                        <NavLink className="nav-link" to="">about</NavLink>
+                        <NavLink className="nav-link text-light fs-5 fw-bold" to="">about</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link" to=""></NavLink>
+                        <NavLink className="nav-link text-light fs-5 fw-bold" to="">Portfolio</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link" to="">Content</NavLink>
+                        <NavLink className="nav-link text-light fs-5 fw-bold" to="">Content</NavLink>
                     </li>
                     
                 </ul>
