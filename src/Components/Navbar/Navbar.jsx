@@ -49,7 +49,7 @@ export default class Navbar extends Component {
                         <NavLink className="nav-link text-light fs-5 fw-bold" to="/portfolio">Portfolio</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link text-light fs-5 fw-bold" to="/content">Content</NavLink>
+                        <NavLink className="nav-link text-light fs-5 fw-bold" to="/contact">contact</NavLink>
                     </li>
                     
                 </ul>
