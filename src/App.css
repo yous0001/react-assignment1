@@ -6,3 +6,17 @@
 .navbar-bg{
   background-color: var(--second-color);
 }
+
+.main-bg{
+  background-color: var(--main-color);
+  height:90vh;
+}
+.avatar-img{
+  width: 250px;
+}
+
+.line{
+  width: 100px;
+  height: 5px;
+  background-color: white;
+}
