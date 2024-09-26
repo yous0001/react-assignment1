@@ -4,11 +4,11 @@
 }
 
 .navbar-bg{
-  background-color: var(--second-color);
+  background-color: var(--second-color) !important;
 }
 
 .main-bg{
-  background-color: var(--main-color);
+  background-color: var(--main-color) !important;
   
 }
 .home-container{
@@ -57,4 +57,27 @@ a{
 a.active{
   background-color: #1abc9c;
   border-radius: 10px;
+}
+i.text-portfolio{
+  color: var(--second-color) !important;
+}
+.img-cover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom: 0;
+  background-color:#1abc9ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.img-cover i{
+  font-size: 8rem;
+  color: white;
+}
+.item:hover .img-cover{
+  opacity: 1;
 }
