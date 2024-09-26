@@ -25,7 +25,7 @@ export default class Navbar extends Component {
     return (
       <>
     <nav
-        className={`navbar navbar-expand-sm navbar-light navbar-bg position-fixed top-0 start-0 end-0 ${(!this.state.scroller) ? " p-5" :"p-2"}`}
+        className={`navbar navbar-expand-sm navbar-light navbar-bg position-fixed top-0 start-0 end-0 ${(!this.state.scroller) ? " p-4" :"p-2"}`}
     >
         <div className="container">
             <Link className="navbar-brand text-light fs-2 fw-bold" to="">START FRAMEWORK</Link>

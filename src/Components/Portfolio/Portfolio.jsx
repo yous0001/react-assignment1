@@ -38,7 +38,7 @@ componentDidMount() {
             <img src={this.state.img} id='img-layer' alt=''/>
         </div>
 
-        <div className="text-center d-flex flex-column align-items-center justify-content-center text-portfolio">
+        <div className="text-center d-flex flex-column align-items-center justify-content-center text-portfolio my-5">
             <h2 className="fs-1 fw-bold mt-4 mb-3 text-uppercase">portfolio component</h2>
             <div className="text-center d-flex align-items-center">
                 <div className="line text-portfolio navbar-bg"></div>
