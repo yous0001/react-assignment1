@@ -4,9 +4,40 @@ import img2 from "../../assets/port2.png";
 import img3 from "../../assets/port3.png";
 
 export default class Portfolio extends Component {
+    state={
+        img:""
+    }
+
+    selectimg=(img)=>{
+        this.setState({img})
+    }
+
+  componentDidMount() {    
+    let items=document.querySelectorAll(".item")  
+    items=Array.from(items)
+    items.forEach(item => {
+        item.addEventListener("click",(e)=>{
+            this.selectimg(item.firstChild.src)
+            e.stopPropagation()
+        });        
+    });
+
+    document.addEventListener("click",()=>{
+        this.setState({img:""})
+    })
+    document.getElementById("img-layer").addEventListener("click",(e)=>{
+        e.stopPropagation()
+    })
+    
+  }
+
   render() {
     return (
         <>
+        <div className={'layer align-items-center justify-content-center '+(this.state.img===""?"d-none":"d-flex")}>
+            <img src={this.state.img} id='img-layer' alt=''/>
+        </div>
+
         <div className="text-center d-flex flex-column align-items-center justify-content-center text-portfolio">
             <h2 className="fs-1 fw-bold mt-4 mb-3 text-uppercase">portfolio component</h2>
             <div className="text-center d-flex align-items-center">
